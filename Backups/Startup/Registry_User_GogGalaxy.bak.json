@@ -1,0 +1,5 @@
+{
+    "Path":  "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+    "Name":  "GogGalaxy",
+    "Value":  "C:\\Program Files (x86)\\GOG Galaxy\\GalaxyClient.exe /launchViaAutoStart"
+}

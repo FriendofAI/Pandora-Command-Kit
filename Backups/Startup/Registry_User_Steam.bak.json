@@ -1,0 +1,5 @@
+{
+    "Path":  "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+    "Name":  "Steam",
+    "Value":  "\"C:\\Program Files (x86)\\Steam\\steam.exe\" -silent"
+}

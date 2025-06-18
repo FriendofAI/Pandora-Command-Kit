@@ -1,0 +1,80 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250617224153
+Username: DESKTOP-1R4BITP\Charley4090
+RunAs User: DESKTOP-1R4BITP\Charley4090
+Configuration Name: 
+Machine: DESKTOP-1R4BITP (Microsoft Windows NT 10.0.26100.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File PandoraApp.ps1
+Process ID: 35756
+PSVersion: 5.1.26100.2161
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.2161
+BuildVersion: 10.0.26100.2161
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is D:\Pandora\Logs\PandoraLog_20250617_224153.txt
+===========================================
+      PANDORA'S APP - SYSTEM ORACLE
+===========================================
+[1]  Curiosity - System Scan
+[2]  Sickness - Temp Cleaner
+[3]  Deceit - Privacy Scan
+[4]  Control - Startup Manager
+[5]  GitHub Installer
+[6]  Model + Tool Portals
+[7]  Dev Environment Report
+[8]  System Backup
+[9]  Driver Updater
+[10] View Logs
+[11] Exit with Hope
+===========================================
+[Pandora] Running Deceit...
+[Deceit] Privacy scan started...
+\nChecking Windows telemetry settings...
+  [!] Telemetry is ENABLED: HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection AllowTelemetry = 3
+      - This setting allows Microsoft to collect diagnostic and usage data.
+\nChecking Windows Advertising ID...
+  Advertising ID is already disabled or not found.
+\nScanning for browser extensions...
+  Chrome extensions found:
+  Edge extensions found:
+  Firefox not detected.
+\nWould you like Pandora to fix these privacy risks automatically? (Y/N)
+\n[Deceit] Privacy settings have been updated. You may need to restart your computer for all changes to take effect.
+\n[Deceit] Privacy scan complete. Summary:
+  - Set HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection AllowTelemetry to 0 (privacy mode)
+Press Enter to return to menu...
+===========================================
+      PANDORA'S APP - SYSTEM ORACLE
+===========================================
+[1]  Curiosity - System Scan
+[2]  Sickness - Temp Cleaner
+[3]  Deceit - Privacy Scan
+[4]  Control - Startup Manager
+[5]  GitHub Installer
+[6]  Model + Tool Portals
+[7]  Dev Environment Report
+[8]  System Backup
+[9]  Driver Updater
+[10] View Logs
+[11] Exit with Hope
+===========================================
+[Pandora] Running Control...
+[Control] Startup manager started...
+\nStartup Items:
+[1] OneDrive | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[2] MicrosoftEdgeAutoLaunch_7EBA691DCA27B2B8793F6DF17D894DD4 | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[3] Discord | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[4] GoogleDriveFS | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[5] EpicGamesLauncher | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[6] Steam | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[7] GogGalaxy | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[8] Docker Desktop | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[9] BingSvc | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[10] SecurityHealth | Machine Registry | HKLM:\Software\Microsoft\Windows\CurrentVersion\Run
+[11] RtkAudUService | Machine Registry | HKLM:\Software\Microsoft\Windows\CurrentVersion\Run
+[12] MTPW | Machine Registry | HKLM:\Software\Microsoft\Windows\CurrentVersion\Run

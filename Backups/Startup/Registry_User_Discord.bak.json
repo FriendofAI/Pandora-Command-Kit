@@ -1,0 +1,5 @@
+{
+    "Path":  "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+    "Name":  "Discord",
+    "Value":  "\"C:\\Users\\charl\\AppData\\Local\\Discord\\Update.exe\" --processStart Discord.exe"
+}

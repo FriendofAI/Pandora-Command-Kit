@@ -1,0 +1,5 @@
+{
+    "Path":  "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+    "Name":  "SecurityHealth",
+    "Value":  "C:\\WINDOWS\\system32\\SecurityHealthSystray.exe"
+}

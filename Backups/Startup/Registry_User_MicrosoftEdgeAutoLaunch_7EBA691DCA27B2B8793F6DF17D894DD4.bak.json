@@ -1,0 +1,5 @@
+{
+    "Path":  "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+    "Name":  "MicrosoftEdgeAutoLaunch_7EBA691DCA27B2B8793F6DF17D894DD4",
+    "Value":  "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --no-startup-window --win-session-start"
+}

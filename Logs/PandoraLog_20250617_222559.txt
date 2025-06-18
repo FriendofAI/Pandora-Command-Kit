@@ -1,0 +1,116 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250617222559
+Username: DESKTOP-1R4BITP\Charley4090
+RunAs User: DESKTOP-1R4BITP\Charley4090
+Configuration Name: 
+Machine: DESKTOP-1R4BITP (Microsoft Windows NT 10.0.26100.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File PandoraApp.ps1
+Process ID: 35612
+PSVersion: 5.1.26100.2161
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.2161
+BuildVersion: 10.0.26100.2161
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is D:\Pandora\Logs\PandoraLog_20250617_222559.txt
+[!] Please run Pandora as Administrator for full functionality.
+===========================================
+      PANDORA'S APP - SYSTEM ORACLE
+===========================================
+[1]  Curiosity - System Scan
+[2]  Sickness - Temp Cleaner
+[3]  Deceit - Privacy Scan
+[4]  Control - Startup Manager
+[5]  GitHub Installer
+[6]  Model + Tool Portals
+[7]  Dev Environment Report
+[8]  System Backup
+[9]  Driver Updater
+[10] View Logs
+[11] Exit with Hope
+===========================================
+[Pandora] Running Sickness...
+[Sickness] Temp cleaner started...
+User Temp: 40 files, 44.91 MB
+  Sample files:
+    C:\Users\charl\AppData\Local\Temp\01e51ad1-001e-44b6-8e22-9d1a4cdd1d87.tmp
+    C:\Users\charl\AppData\Local\Temp\1b686df9-4158-42f9-841f-18b31e2da4ab.tmp
+    C:\Users\charl\AppData\Local\Temp\2740b1a2-925f-45f3-911b-4eb7b5b42ebc.tmp
+    C:\Users\charl\AppData\Local\Temp\2e471a12-6178-48df-87bd-76fb725dd2a7.tmp
+    C:\Users\charl\AppData\Local\Temp\366697d0-50e5-4032-bd31-298b30c3499b.tmp
+Windows Temp: 0 files, 0 MB
+  No files found.
+Recycle Bin: 0 items, 0 MB
+  No items found.
+\nTotal: 40 files/items, 44.91 MB
+\n[Sickness] Temp files and Recycle Bin cleaned.
+[Sickness] Temp cleaner complete.
+Press Enter to return to menu...
+===========================================
+      PANDORA'S APP - SYSTEM ORACLE
+===========================================
+[1]  Curiosity - System Scan
+[2]  Sickness - Temp Cleaner
+[3]  Deceit - Privacy Scan
+[4]  Control - Startup Manager
+[5]  GitHub Installer
+[6]  Model + Tool Portals
+[7]  Dev Environment Report
+[8]  System Backup
+[9]  Driver Updater
+[10] View Logs
+[11] Exit with Hope
+===========================================
+[Pandora] Running Sickness...
+[Sickness] Temp cleaner started...
+User Temp: 40 files, 44.91 MB
+  Sample files:
+    C:\Users\charl\AppData\Local\Temp\01e51ad1-001e-44b6-8e22-9d1a4cdd1d87.tmp
+    C:\Users\charl\AppData\Local\Temp\1b686df9-4158-42f9-841f-18b31e2da4ab.tmp
+    C:\Users\charl\AppData\Local\Temp\2740b1a2-925f-45f3-911b-4eb7b5b42ebc.tmp
+    C:\Users\charl\AppData\Local\Temp\2e471a12-6178-48df-87bd-76fb725dd2a7.tmp
+    C:\Users\charl\AppData\Local\Temp\366697d0-50e5-4032-bd31-298b30c3499b.tmp
+Windows Temp: 0 files, 0 MB
+  No files found.
+Recycle Bin: 0 items, 0 MB
+  No items found.
+\nTotal: 40 files/items, 44.91 MB
+\n[Sickness] Temp files and Recycle Bin cleaned.
+[Sickness] Temp cleaner complete.
+Press Enter to return to menu...
+===========================================
+      PANDORA'S APP - SYSTEM ORACLE
+===========================================
+[1]  Curiosity - System Scan
+[2]  Sickness - Temp Cleaner
+[3]  Deceit - Privacy Scan
+[4]  Control - Startup Manager
+[5]  GitHub Installer
+[6]  Model + Tool Portals
+[7]  Dev Environment Report
+[8]  System Backup
+[9]  Driver Updater
+[10] View Logs
+[11] Exit with Hope
+===========================================
+[Pandora] Running Sickness...
+[Sickness] Temp cleaner started...
+User Temp: 42 files, 46.33 MB
+  Sample files:
+    C:\Users\charl\AppData\Local\Temp\01e51ad1-001e-44b6-8e22-9d1a4cdd1d87.tmp
+    C:\Users\charl\AppData\Local\Temp\1b686df9-4158-42f9-841f-18b31e2da4ab.tmp
+    C:\Users\charl\AppData\Local\Temp\2740b1a2-925f-45f3-911b-4eb7b5b42ebc.tmp
+    C:\Users\charl\AppData\Local\Temp\2e471a12-6178-48df-87bd-76fb725dd2a7.tmp
+    C:\Users\charl\AppData\Local\Temp\366697d0-50e5-4032-bd31-298b30c3499b.tmp
+Windows Temp: 0 files, 0 MB
+  No files found.
+Recycle Bin: 0 items, 0 MB
+  No items found.
+\nTotal: 42 files/items, 46.33 MB
+\n[Sickness] Temp files and Recycle Bin cleaned.
+[Sickness] Temp cleaner complete.
+Press Enter to return to menu...

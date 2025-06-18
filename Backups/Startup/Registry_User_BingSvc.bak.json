@@ -1,0 +1,5 @@
+{
+    "Path":  "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+    "Name":  "BingSvc",
+    "Value":  "C:\\Users\\charl\\AppData\\Local\\Microsoft\\BingSvc\\BingSvc.exe"
+}

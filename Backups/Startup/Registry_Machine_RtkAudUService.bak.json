@@ -1,0 +1,5 @@
+{
+    "Path":  "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+    "Name":  "RtkAudUService",
+    "Value":  "\"C:\\WINDOWS\\System32\\DriverStore\\FileRepository\\realtekservice.inf_amd64_6e7542ceb248e4b2\\RtkAudUService64.exe\" -background"
+}

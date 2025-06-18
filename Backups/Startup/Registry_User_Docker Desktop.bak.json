@@ -1,0 +1,5 @@
+{
+    "Path":  "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+    "Name":  "Docker Desktop",
+    "Value":  "C:\\Program Files\\Docker\\Docker\\Docker Desktop.exe -Autostart"
+}

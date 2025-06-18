@@ -1,0 +1,5 @@
+{
+    "Path":  "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+    "Name":  "GoogleDriveFS",
+    "Value":  "C:\\Program Files\\Google\\Drive File Stream\\109.0.3.0\\GoogleDriveFS.exe --startup_mode"
+}

@@ -1,0 +1,67 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250617230345
+Username: DESKTOP-1R4BITP\Charley4090
+RunAs User: DESKTOP-1R4BITP\Charley4090
+Configuration Name: 
+Machine: DESKTOP-1R4BITP (Microsoft Windows NT 10.0.26100.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File PandoraApp.ps1
+Process ID: 24248
+PSVersion: 5.1.26100.2161
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.2161
+BuildVersion: 10.0.26100.2161
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is D:\Pandora\Logs\PandoraLog_20250617_230345.txt
+===========================================
+      PANDORA'S APP - SYSTEM ORACLE
+===========================================
+[1]  Curiosity - System Scan
+[2]  Sickness - Temp Cleaner
+[3]  Deceit - Privacy Scan
+[4]  Control - Startup Manager
+[5]  GitHub Installer
+[6]  Model + Tool Portals
+[7]  Dev Environment Report
+[8]  System Backup
+[9]  Driver Updater
+[10] View Logs
+[11] Exit with Hope
+===========================================
+[Pandora] Running Control...
+[Control] Startup manager started...
+\nCurrent Startup Items (Remove):
+[1] OneDrive | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[2] MicrosoftEdgeAutoLaunch_7EBA691DCA27B2B8793F6DF17D894DD4 | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[3] Discord | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[4] GoogleDriveFS | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[5] EpicGamesLauncher | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[6] Steam | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[7] GogGalaxy | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[8] Docker Desktop | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[9] BingSvc | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[10] SecurityHealth | Machine Registry | HKLM:\Software\Microsoft\Windows\CurrentVersion\Run
+[11] RtkAudUService | Machine Registry | HKLM:\Software\Microsoft\Windows\CurrentVersion\Run
+[12] MTPW | Machine Registry | HKLM:\Software\Microsoft\Windows\CurrentVersion\Run
+\nEnter the number of a startup item to disable/remove, or press Enter to skip.
+Or enter 'R' to restore a previously removed startup item, or 'Q' to quit.
+Backing up and disabling/removing: MTPW (Machine Registry)...
+[Control] MTPW removed from startup and backed up.
+\nCurrent Startup Items (Remove):
+[1] OneDrive | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[2] MicrosoftEdgeAutoLaunch_7EBA691DCA27B2B8793F6DF17D894DD4 | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[3] Discord | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[4] GoogleDriveFS | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[5] EpicGamesLauncher | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[6] Steam | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[7] GogGalaxy | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[8] Docker Desktop | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[9] BingSvc | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[10] SecurityHealth | Machine Registry | HKLM:\Software\Microsoft\Windows\CurrentVersion\Run
+[11] RtkAudUService | Machine Registry | HKLM:\Software\Microsoft\Windows\CurrentVersion\Run
+\nEnter the number of a startup item to disable/remove, or press Enter to skip.
+Or enter 'R' to restore a previously removed startup item, or 'Q' to quit.

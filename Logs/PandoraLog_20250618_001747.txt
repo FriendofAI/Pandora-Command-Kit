@@ -1,0 +1,62 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250618001747
+Username: DESKTOP-1R4BITP\Charley4090
+RunAs User: DESKTOP-1R4BITP\Charley4090
+Configuration Name: 
+Machine: DESKTOP-1R4BITP (Microsoft Windows NT 10.0.26100.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File PandoraApp.ps1
+Process ID: 4808
+PSVersion: 5.1.26100.2161
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.2161
+BuildVersion: 10.0.26100.2161
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is D:\Pandora\Logs\PandoraLog_20250618_001747.txt
+===========================================
+      PANDORA'S APP - SYSTEM ORACLE
+===========================================
+[1]  Curiosity - System Scan
+[2]  Sickness - Temp Cleaner
+[3]  Deceit - Privacy Scan
+[4]  Control - Startup Manager
+[5]  GitHub Installer
+[6]  Model + Tool Portals
+[7]  Dev Environment Report
+[8]  System Backup
+[9]  Driver Updater
+[10] View Logs
+[11] Exit with Hope
+===========================================
+[Pandora] Running InstallFromGit...
+[GitHub Installer] Started...
+Select a repository to install or enter your own:
+  [1] AUTOMATIC1111/stable-diffusion-webui
+  [2] comfyanonymous/ComfyUI
+  [3] lllyasviel/stable-diffusion-webui-forge
+  [4] lllyasviel/FramePack
+  [5] Enter a custom GitHub URL
+Cloning https://github.com/lllyasviel/FramePack.git to D:\FramePack_Redo\FramePack...
+Cloning into 'D:\FramePack_Redo\FramePack'...
+remote: Enumerating objects: 84, done.
+remote: Counting objects: 100% (44/44), done.
+remote: Compressing objects: 100% (22/22), done.
+remote: Total 84 (delta 24), reused 22 (delta 22), pack-reused 40 (from 1)
+Receiving objects: 100% (84/84), 49.38 KiB | 1.90 MiB/s, done.
+Resolving deltas: 100% (38/38), done.
+Clone successful!
+requirements.txt found. Using venv + pip install.
+
+Requirement already satisfied: pip in d:\framepack_redo\framepack\venv\lib\site-packages (22.2.1)
+Collecting pip
+  Using cached pip-25.1.1-py3-none-any.whl (1.8 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 22.2.1
+    Uninstalling pip-22.2.1:
+      Successfully uninstalled pip-22.2.1
+Successfully installed pip-25.1.1

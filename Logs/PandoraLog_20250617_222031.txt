@@ -1,0 +1,71 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250617222031
+Username: DESKTOP-1R4BITP\Charley4090
+RunAs User: DESKTOP-1R4BITP\Charley4090
+Configuration Name: 
+Machine: DESKTOP-1R4BITP (Microsoft Windows NT 10.0.26100.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File PandoraApp.ps1
+Process ID: 8320
+PSVersion: 5.1.26100.2161
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.2161
+BuildVersion: 10.0.26100.2161
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is D:\Pandora\Logs\PandoraLog_20250617_222031.txt
+[!] Please run Pandora as Administrator for full functionality.
+===========================================
+      PANDORA'S APP - SYSTEM ORACLE
+===========================================
+[1]  Curiosity - System Scan
+[2]  Sickness - Temp Cleaner
+[3]  Deceit - Privacy Scan
+[4]  Control - Startup Manager
+[5]  GitHub Installer
+[6]  Model + Tool Portals
+[7]  Dev Environment Report
+[8]  System Backup
+[9]  Driver Updater
+[10] View Logs
+[11] Exit with Hope
+===========================================
+[Pandora] Running Curiosity...
+[Curiosity] System scan started...
+OS Version: Microsoft Windows 11 Pro
+Build Number: 26100
+Computer Name: DESKTOP-1R4BITP
+CPU: AMD Ryzen 9 7950X 16-Core Processor
+RAM: 63.74 GB
+GPU: NVIDIA GeForce RTX 4090
+Drives:
+  Drive C:: 1,884.19 GB total, 388.77 GB free
+  Drive D:: 1,862.89 GB total, 509.14 GB free
+Speakers/Audio Devices:
+  NVIDIA High Definition Audio
+  Realtek Audio
+  NVIDIA Virtual Audio Device (Wave Extensible) (WDM)
+\nChecking for developer tools...
+Python: Found (C:\Python310\python.exe)
+VS Code: Found (c:\Users\charl\AppData\Local\Programs\cursor\resources\app\bin\code.cmd)
+Anaconda: Not found
+\n[Curiosity] System scan complete.
+Press Enter to return to menu...
+===========================================
+      PANDORA'S APP - SYSTEM ORACLE
+===========================================
+[1]  Curiosity - System Scan
+[2]  Sickness - Temp Cleaner
+[3]  Deceit - Privacy Scan
+[4]  Control - Startup Manager
+[5]  GitHub Installer
+[6]  Model + Tool Portals
+[7]  Dev Environment Report
+[8]  System Backup
+[9]  Driver Updater
+[10] View Logs
+[11] Exit with Hope
+===========================================

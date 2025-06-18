@@ -1,0 +1,5 @@
+{
+    "Path":  "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+    "Name":  "MTPW",
+    "Value":  "\"C:\\Program Files\\MiniTool Partition Wizard 12\\updatechecker.exe\""
+}

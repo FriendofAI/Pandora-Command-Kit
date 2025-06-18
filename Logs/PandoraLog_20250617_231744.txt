@@ -1,0 +1,272 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250617231744
+Username: DESKTOP-1R4BITP\Charley4090
+RunAs User: DESKTOP-1R4BITP\Charley4090
+Configuration Name: 
+Machine: DESKTOP-1R4BITP (Microsoft Windows NT 10.0.26100.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File PandoraApp.ps1
+Process ID: 8076
+PSVersion: 5.1.26100.2161
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.2161
+BuildVersion: 10.0.26100.2161
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is D:\Pandora\Logs\PandoraLog_20250617_231744.txt
+===========================================
+      PANDORA'S APP - SYSTEM ORACLE
+===========================================
+[1]  Curiosity - System Scan
+[2]  Sickness - Temp Cleaner
+[3]  Deceit - Privacy Scan
+[4]  Control - Startup Manager
+[5]  GitHub Installer
+[6]  Model + Tool Portals
+[7]  Dev Environment Report
+[8]  System Backup
+[9]  Driver Updater
+[10] View Logs
+[11] Exit with Hope
+===========================================
+[Pandora] Running Control...
+[Control] Startup manager started...
+\n==================== HELP ====================
+Enter a number (e.g., 3) to REMOVE a current startup item.
+Enter 'R#' (e.g., R2) to RESTORE a backed-up item.
+Enter 'Q' to quit.
+==============================================
+\nCurrent Startup Items (Remove):
+[1] OneDrive | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[2] MicrosoftEdgeAutoLaunch_7EBA691DCA27B2B8793F6DF17D894DD4 | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[3] Discord | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[4] GoogleDriveFS | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[5] EpicGamesLauncher | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[6] Steam | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[7] GogGalaxy | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[8] Docker Desktop | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[9] BingSvc | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[10] SecurityHealth | Machine Registry | HKLM:\Software\Microsoft\Windows\CurrentVersion\Run
+\nBacked-up Startup Items (Restore):
+[R1] Registry_Machine_MTPW.bak.json
+[R2] Registry_Machine_RtkAudUService.bak.json
+[R3] Registry__.bak.json
+\nEnter your selection:
+[Debug] Parsed number selection: 3
+Backing up and disabling/removing: Discord (User Registry)...
+[Control] Discord removed from startup and backed up.
+\n==================== HELP ====================
+Enter a number (e.g., 3) to REMOVE a current startup item.
+Enter 'R#' (e.g., R2) to RESTORE a backed-up item.
+Enter 'Q' to quit.
+==============================================
+\nCurrent Startup Items (Remove):
+[1] OneDrive | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[2] MicrosoftEdgeAutoLaunch_7EBA691DCA27B2B8793F6DF17D894DD4 | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[3] GoogleDriveFS | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[4] EpicGamesLauncher | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[5] Steam | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[6] GogGalaxy | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[7] Docker Desktop | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[8] BingSvc | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[9] SecurityHealth | Machine Registry | HKLM:\Software\Microsoft\Windows\CurrentVersion\Run
+\nBacked-up Startup Items (Restore):
+[R1] Registry_Machine_MTPW.bak.json
+[R2] Registry_Machine_RtkAudUService.bak.json
+[R3] Registry_User_Discord.bak.json
+[R4] Registry__.bak.json
+\nEnter your selection:
+[Debug] Parsed number selection: 8
+Backing up and disabling/removing: BingSvc (User Registry)...
+[Control] BingSvc removed from startup and backed up.
+\n==================== HELP ====================
+Enter a number (e.g., 3) to REMOVE a current startup item.
+Enter 'R#' (e.g., R2) to RESTORE a backed-up item.
+Enter 'Q' to quit.
+==============================================
+\nCurrent Startup Items (Remove):
+[1] OneDrive | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[2] MicrosoftEdgeAutoLaunch_7EBA691DCA27B2B8793F6DF17D894DD4 | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[3] GoogleDriveFS | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[4] EpicGamesLauncher | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[5] Steam | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[6] GogGalaxy | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[7] Docker Desktop | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[8] SecurityHealth | Machine Registry | HKLM:\Software\Microsoft\Windows\CurrentVersion\Run
+\nBacked-up Startup Items (Restore):
+[R1] Registry_Machine_MTPW.bak.json
+[R2] Registry_Machine_RtkAudUService.bak.json
+[R3] Registry_User_BingSvc.bak.json
+[R4] Registry_User_Discord.bak.json
+[R5] Registry__.bak.json
+\nEnter your selection:
+[Debug] Parsed number selection: 8
+Backing up and disabling/removing: SecurityHealth (Machine Registry)...
+[Control] SecurityHealth removed from startup and backed up.
+\n==================== HELP ====================
+Enter a number (e.g., 3) to REMOVE a current startup item.
+Enter 'R#' (e.g., R2) to RESTORE a backed-up item.
+Enter 'Q' to quit.
+==============================================
+\nCurrent Startup Items (Remove):
+[1] OneDrive | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[2] MicrosoftEdgeAutoLaunch_7EBA691DCA27B2B8793F6DF17D894DD4 | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[3] GoogleDriveFS | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[4] EpicGamesLauncher | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[5] Steam | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[6] GogGalaxy | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[7] Docker Desktop | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+\nBacked-up Startup Items (Restore):
+[R1] Registry_Machine_MTPW.bak.json
+[R2] Registry_Machine_RtkAudUService.bak.json
+[R3] Registry_Machine_SecurityHealth.bak.json
+[R4] Registry_User_BingSvc.bak.json
+[R5] Registry_User_Discord.bak.json
+[R6] Registry__.bak.json
+\nEnter your selection:
+[Debug] Parsed number selection: 7
+Backing up and disabling/removing: Docker Desktop (User Registry)...
+[Control] Docker Desktop removed from startup and backed up.
+\n==================== HELP ====================
+Enter a number (e.g., 3) to REMOVE a current startup item.
+Enter 'R#' (e.g., R2) to RESTORE a backed-up item.
+Enter 'Q' to quit.
+==============================================
+\nCurrent Startup Items (Remove):
+[1] OneDrive | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[2] MicrosoftEdgeAutoLaunch_7EBA691DCA27B2B8793F6DF17D894DD4 | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[3] GoogleDriveFS | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[4] EpicGamesLauncher | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[5] Steam | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[6] GogGalaxy | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+\nBacked-up Startup Items (Restore):
+[R1] Registry_Machine_MTPW.bak.json
+[R2] Registry_Machine_RtkAudUService.bak.json
+[R3] Registry_Machine_SecurityHealth.bak.json
+[R4] Registry_User_BingSvc.bak.json
+[R5] Registry_User_Discord.bak.json
+[R6] Registry_User_Docker Desktop.bak.json
+[R7] Registry__.bak.json
+\nEnter your selection:
+[Debug] Parsed number selection: 6
+Backing up and disabling/removing: GogGalaxy (User Registry)...
+[Control] GogGalaxy removed from startup and backed up.
+\n==================== HELP ====================
+Enter a number (e.g., 3) to REMOVE a current startup item.
+Enter 'R#' (e.g., R2) to RESTORE a backed-up item.
+Enter 'Q' to quit.
+==============================================
+\nCurrent Startup Items (Remove):
+[1] OneDrive | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[2] MicrosoftEdgeAutoLaunch_7EBA691DCA27B2B8793F6DF17D894DD4 | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[3] GoogleDriveFS | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[4] EpicGamesLauncher | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[5] Steam | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+\nBacked-up Startup Items (Restore):
+[R1] Registry_Machine_MTPW.bak.json
+[R2] Registry_Machine_RtkAudUService.bak.json
+[R3] Registry_Machine_SecurityHealth.bak.json
+[R4] Registry_User_BingSvc.bak.json
+[R5] Registry_User_Discord.bak.json
+[R6] Registry_User_Docker Desktop.bak.json
+[R7] Registry_User_GogGalaxy.bak.json
+[R8] Registry__.bak.json
+\nEnter your selection:
+[Debug] Parsed number selection: 5
+Backing up and disabling/removing: Steam (User Registry)...
+[Control] Steam removed from startup and backed up.
+\n==================== HELP ====================
+Enter a number (e.g., 3) to REMOVE a current startup item.
+Enter 'R#' (e.g., R2) to RESTORE a backed-up item.
+Enter 'Q' to quit.
+==============================================
+\nCurrent Startup Items (Remove):
+[1] OneDrive | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[2] MicrosoftEdgeAutoLaunch_7EBA691DCA27B2B8793F6DF17D894DD4 | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[3] GoogleDriveFS | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[4] EpicGamesLauncher | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+\nBacked-up Startup Items (Restore):
+[R1] Registry_Machine_MTPW.bak.json
+[R2] Registry_Machine_RtkAudUService.bak.json
+[R3] Registry_Machine_SecurityHealth.bak.json
+[R4] Registry_User_BingSvc.bak.json
+[R5] Registry_User_Discord.bak.json
+[R6] Registry_User_Docker Desktop.bak.json
+[R7] Registry_User_GogGalaxy.bak.json
+[R8] Registry_User_Steam.bak.json
+[R9] Registry__.bak.json
+\nEnter your selection:
+[Debug] Parsed number selection: 4
+Backing up and disabling/removing: EpicGamesLauncher (User Registry)...
+[Control] EpicGamesLauncher removed from startup and backed up.
+\n==================== HELP ====================
+Enter a number (e.g., 3) to REMOVE a current startup item.
+Enter 'R#' (e.g., R2) to RESTORE a backed-up item.
+Enter 'Q' to quit.
+==============================================
+\nCurrent Startup Items (Remove):
+[1] OneDrive | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[2] MicrosoftEdgeAutoLaunch_7EBA691DCA27B2B8793F6DF17D894DD4 | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[3] GoogleDriveFS | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+\nBacked-up Startup Items (Restore):
+[R1] Registry_Machine_MTPW.bak.json
+[R2] Registry_Machine_RtkAudUService.bak.json
+[R3] Registry_Machine_SecurityHealth.bak.json
+[R4] Registry_User_BingSvc.bak.json
+[R5] Registry_User_Discord.bak.json
+[R6] Registry_User_Docker Desktop.bak.json
+[R7] Registry_User_EpicGamesLauncher.bak.json
+[R8] Registry_User_GogGalaxy.bak.json
+[R9] Registry_User_Steam.bak.json
+[R10] Registry__.bak.json
+\nEnter your selection:
+[Debug] Parsed number selection: 3
+Backing up and disabling/removing: GoogleDriveFS (User Registry)...
+[Control] GoogleDriveFS removed from startup and backed up.
+\n==================== HELP ====================
+Enter a number (e.g., 3) to REMOVE a current startup item.
+Enter 'R#' (e.g., R2) to RESTORE a backed-up item.
+Enter 'Q' to quit.
+==============================================
+\nCurrent Startup Items (Remove):
+[1] OneDrive | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+[2] MicrosoftEdgeAutoLaunch_7EBA691DCA27B2B8793F6DF17D894DD4 | User Registry | HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+\nBacked-up Startup Items (Restore):
+[R1] Registry_Machine_MTPW.bak.json
+[R2] Registry_Machine_RtkAudUService.bak.json
+[R3] Registry_Machine_SecurityHealth.bak.json
+[R4] Registry_User_BingSvc.bak.json
+[R5] Registry_User_Discord.bak.json
+[R6] Registry_User_Docker Desktop.bak.json
+[R7] Registry_User_EpicGamesLauncher.bak.json
+[R8] Registry_User_GogGalaxy.bak.json
+[R9] Registry_User_GoogleDriveFS.bak.json
+[R10] Registry_User_Steam.bak.json
+[R11] Registry__.bak.json
+\nEnter your selection:
+[Debug] Parsed number selection: 2
+Backing up and disabling/removing: MicrosoftEdgeAutoLaunch_7EBA691DCA27B2B8793F6DF17D894DD4 (User Registry)...
+[Control] MicrosoftEdgeAutoLaunch_7EBA691DCA27B2B8793F6DF17D894DD4 removed from startup and backed up.
+\n==================== HELP ====================
+Enter a number (e.g., 3) to REMOVE a current startup item.
+Enter 'R#' (e.g., R2) to RESTORE a backed-up item.
+Enter 'Q' to quit.
+==============================================
+\nCurrent Startup Items (Remove):
+\nBacked-up Startup Items (Restore):
+[R1] Registry_Machine_MTPW.bak.json
+[R2] Registry_Machine_RtkAudUService.bak.json
+[R3] Registry_Machine_SecurityHealth.bak.json
+[R4] Registry_User_BingSvc.bak.json
+[R5] Registry_User_Discord.bak.json
+[R6] Registry_User_Docker Desktop.bak.json
+[R7] Registry_User_EpicGamesLauncher.bak.json
+[R8] Registry_User_GogGalaxy.bak.json
+[R9] Registry_User_GoogleDriveFS.bak.json
+[R10] Registry_User_MicrosoftEdgeAutoLaunch_7EBA691DCA27B2B8793F6DF17D894DD4.bak.json
+[R11] Registry_User_Steam.bak.json
+[R12] Registry__.bak.json
+\nEnter your selection:

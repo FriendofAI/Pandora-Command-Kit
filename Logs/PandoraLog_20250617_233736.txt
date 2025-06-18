@@ -1,0 +1,832 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250617233736
+Username: DESKTOP-1R4BITP\Charley4090
+RunAs User: DESKTOP-1R4BITP\Charley4090
+Configuration Name: 
+Machine: DESKTOP-1R4BITP (Microsoft Windows NT 10.0.26100.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File PandoraApp.ps1
+Process ID: 37088
+PSVersion: 5.1.26100.2161
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.2161
+BuildVersion: 10.0.26100.2161
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is D:\Pandora\Logs\PandoraLog_20250617_233736.txt
+===========================================
+      PANDORA'S APP - SYSTEM ORACLE
+===========================================
+[1]  Curiosity - System Scan
+[2]  Sickness - Temp Cleaner
+[3]  Deceit - Privacy Scan
+[4]  Control - Startup Manager
+[5]  GitHub Installer
+[6]  Model + Tool Portals
+[7]  Dev Environment Report
+[8]  System Backup
+[9]  Driver Updater
+[10] View Logs
+[11] Exit with Hope
+===========================================
+[Pandora] Running InstallFromGit...
+[GitHub Installer] Started...
+Select a repository to install or enter your own:
+  [1] AUTOMATIC1111/stable-diffusion-webui
+  [2] comfyanonymous/ComfyUI
+  [3] lllyasviel/stable-diffusion-webui-forge
+  [4] lllyasviel/FramePack
+  [5] Enter a custom GitHub URL
+Cloning https://github.com/lllyasviel/FramePack.git to D:\FramePack_Redo\FramePack...
+Cloning into 'D:\FramePack_Redo\FramePack'...
+remote: Enumerating objects: 84, done.
+remote: Counting objects: 100% (41/41), done.
+remote: Compressing objects: 100% (21/21), done.
+Receiving objects: 100% (84/84), 49.19 KiB | 9.84 MiB/s, done.
+Resolving deltas: 100% (39/39), done.
+remote: Total 84 (delta 22), reused 20 (delta 20), pack-reused 43 (from 1)
+Clone successful!
+requirements.txt found. Using venv + pip install.
+
+Requirement already satisfied: pip in d:\framepack_redo\framepack\venv\lib\site-packages (22.2.1)
+Collecting pip
+  Using cached pip-25.1.1-py3-none-any.whl (1.8 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 22.2.1
+    Uninstalling pip-22.2.1:
+      Successfully uninstalled pip-22.2.1
+Successfully installed pip-25.1.1
+Collecting accelerate==1.6.0 (from -r D:\FramePack_Redo\FramePack\requirements.txt (line 1))
+  Using cached accelerate-1.6.0-py3-none-any.whl.metadata (19 kB)
+Collecting diffusers==0.33.1 (from -r D:\FramePack_Redo\FramePack\requirements.txt (line 2))
+  Using cached diffusers-0.33.1-py3-none-any.whl.metadata (19 kB)
+Collecting transformers==4.46.2 (from -r D:\FramePack_Redo\FramePack\requirements.txt (line 3))
+  Using cached transformers-4.46.2-py3-none-any.whl.metadata (44 kB)
+Collecting gradio==5.23.0 (from -r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Using cached gradio-5.23.0-py3-none-any.whl.metadata (16 kB)
+Collecting sentencepiece==0.2.0 (from -r D:\FramePack_Redo\FramePack\requirements.txt (line 5))
+  Using cached sentencepiece-0.2.0-cp310-cp310-win_amd64.whl.metadata (8.3 kB)
+Collecting pillow==11.1.0 (from -r D:\FramePack_Redo\FramePack\requirements.txt (line 6))
+  Using cached pillow-11.1.0-cp310-cp310-win_amd64.whl.metadata (9.3 kB)
+Collecting av==12.1.0 (from -r D:\FramePack_Redo\FramePack\requirements.txt (line 7))
+  Using cached av-12.1.0-cp310-cp310-win_amd64.whl.metadata (4.7 kB)
+Collecting numpy==1.26.2 (from -r D:\FramePack_Redo\FramePack\requirements.txt (line 8))
+  Using cached numpy-1.26.2-cp310-cp310-win_amd64.whl.metadata (61 kB)
+Collecting scipy==1.12.0 (from -r D:\FramePack_Redo\FramePack\requirements.txt (line 9))
+  Using cached scipy-1.12.0-cp310-cp310-win_amd64.whl.metadata (60 kB)
+Collecting requests==2.31.0 (from -r D:\FramePack_Redo\FramePack\requirements.txt (line 10))
+  Using cached requests-2.31.0-py3-none-any.whl.metadata (4.6 kB)
+Collecting torchsde==0.2.6 (from -r D:\FramePack_Redo\FramePack\requirements.txt (line 11))
+  Using cached torchsde-0.2.6-py3-none-any.whl.metadata (5.3 kB)
+Collecting einops (from -r D:\FramePack_Redo\FramePack\requirements.txt (line 13))
+  Using cached einops-0.8.1-py3-none-any.whl.metadata (13 kB)
+Collecting opencv-contrib-python (from -r D:\FramePack_Redo\FramePack\requirements.txt (line 14))
+  Using cached opencv_contrib_python-4.11.0.86-cp37-abi3-win_amd64.whl.metadata (20 kB)
+Collecting safetensors (from -r D:\FramePack_Redo\FramePack\requirements.txt (line 15))
+  Using cached safetensors-0.5.3-cp38-abi3-win_amd64.whl.metadata (3.9 kB)
+Collecting packaging>=20.0 (from accelerate==1.6.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 1))
+  Using cached packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting psutil (from accelerate==1.6.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 1))
+  Using cached psutil-7.0.0-cp37-abi3-win_amd64.whl.metadata (23 kB)
+Collecting pyyaml (from accelerate==1.6.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 1))
+  Using cached PyYAML-6.0.2-cp310-cp310-win_amd64.whl.metadata (2.1 kB)
+Collecting torch>=2.0.0 (from accelerate==1.6.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 1))
+  Using cached torch-2.7.1-cp310-cp310-win_amd64.whl.metadata (28 kB)
+Collecting huggingface-hub>=0.21.0 (from accelerate==1.6.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 1))
+  Using cached huggingface_hub-0.33.0-py3-none-any.whl.metadata (14 kB)
+Collecting importlib-metadata (from diffusers==0.33.1->-r D:\FramePack_Redo\FramePack\requirements.txt (line 2))
+  Using cached importlib_metadata-8.7.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting filelock (from diffusers==0.33.1->-r D:\FramePack_Redo\FramePack\requirements.txt (line 2))
+  Using cached filelock-3.18.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting regex!=2019.12.17 (from diffusers==0.33.1->-r D:\FramePack_Redo\FramePack\requirements.txt (line 2))
+  Using cached regex-2024.11.6-cp310-cp310-win_amd64.whl.metadata (41 kB)
+Collecting tokenizers<0.21,>=0.20 (from transformers==4.46.2->-r D:\FramePack_Redo\FramePack\requirements.txt (line 3))
+  Using cached tokenizers-0.20.3-cp310-none-win_amd64.whl.metadata (6.9 kB)
+Collecting tqdm>=4.27 (from transformers==4.46.2->-r D:\FramePack_Redo\FramePack\requirements.txt (line 3))
+  Using cached tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+Collecting aiofiles<24.0,>=22.0 (from gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Using cached aiofiles-23.2.1-py3-none-any.whl.metadata (9.7 kB)
+Collecting anyio<5.0,>=3.0 (from gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Using cached anyio-4.9.0-py3-none-any.whl.metadata (4.7 kB)
+Collecting fastapi<1.0,>=0.115.2 (from gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Using cached fastapi-0.115.13-py3-none-any.whl.metadata (27 kB)
+Collecting ffmpy (from gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Using cached ffmpy-0.6.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting gradio-client==1.8.0 (from gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Using cached gradio_client-1.8.0-py3-none-any.whl.metadata (7.1 kB)
+Collecting groovy~=0.1 (from gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Using cached groovy-0.1.2-py3-none-any.whl.metadata (6.1 kB)
+Collecting httpx>=0.24.1 (from gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting jinja2<4.0 (from gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting markupsafe<4.0,>=2.0 (from gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Using cached MarkupSafe-3.0.2-cp310-cp310-win_amd64.whl.metadata (4.1 kB)
+Collecting orjson~=3.0 (from gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Using cached orjson-3.10.18-cp310-cp310-win_amd64.whl.metadata (43 kB)
+Collecting pandas<3.0,>=1.0 (from gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Using cached pandas-2.3.0-cp310-cp310-win_amd64.whl.metadata (19 kB)
+Collecting pydantic>=2.0 (from gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Using cached pydantic-2.11.7-py3-none-any.whl.metadata (67 kB)
+Collecting pydub (from gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Using cached pydub-0.25.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting python-multipart>=0.0.18 (from gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Using cached python_multipart-0.0.20-py3-none-any.whl.metadata (1.8 kB)
+Collecting ruff>=0.9.3 (from gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Downloading ruff-0.12.0-py3-none-win_amd64.whl.metadata (26 kB)
+Collecting safehttpx<0.2.0,>=0.1.6 (from gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Using cached safehttpx-0.1.6-py3-none-any.whl.metadata (4.2 kB)
+Collecting semantic-version~=2.0 (from gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Using cached semantic_version-2.10.0-py2.py3-none-any.whl.metadata (9.7 kB)
+Collecting starlette<1.0,>=0.40.0 (from gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Downloading starlette-0.47.0-py3-none-any.whl.metadata (6.2 kB)
+Collecting tomlkit<0.14.0,>=0.12.0 (from gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Downloading tomlkit-0.13.3-py3-none-any.whl.metadata (2.8 kB)
+Collecting typer<1.0,>=0.12 (from gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Downloading typer-0.16.0-py3-none-any.whl.metadata (15 kB)
+Collecting typing-extensions~=4.0 (from gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Using cached typing_extensions-4.14.0-py3-none-any.whl.metadata (3.0 kB)
+Collecting uvicorn>=0.14.0 (from gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Using cached uvicorn-0.34.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting charset-normalizer<4,>=2 (from requests==2.31.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 10))
+  Using cached charset_normalizer-3.4.2-cp310-cp310-win_amd64.whl.metadata (36 kB)
+Collecting idna<4,>=2.5 (from requests==2.31.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 10))
+  Using cached idna-3.10-py3-none-any.whl.metadata (10 kB)
+Collecting urllib3<3,>=1.21.1 (from requests==2.31.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 10))
+  Using cached urllib3-2.4.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting certifi>=2017.4.17 (from requests==2.31.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 10))
+  Using cached certifi-2025.6.15-py3-none-any.whl.metadata (2.4 kB)
+Collecting trampoline>=0.1.2 (from torchsde==0.2.6->-r D:\FramePack_Redo\FramePack\requirements.txt (line 11))
+  Using cached trampoline-0.1.2-py3-none-any.whl.metadata (10 kB)
+Collecting fsspec (from gradio-client==1.8.0->gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Using cached fsspec-2025.5.1-py3-none-any.whl.metadata (11 kB)
+Collecting websockets<16.0,>=10.0 (from gradio-client==1.8.0->gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirement
+s.txt (line 4))
+  Using cached websockets-15.0.1-cp310-cp310-win_amd64.whl.metadata (7.0 kB)
+Collecting exceptiongroup>=1.0.2 (from anyio<5.0,>=3.0->gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt
+(line 4))
+  Using cached exceptiongroup-1.3.0-py3-none-any.whl.metadata (6.7 kB)
+Collecting sniffio>=1.1 (from anyio<5.0,>=3.0->gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+
+  Using cached sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting starlette<1.0,>=0.40.0 (from gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Using cached starlette-0.46.2-py3-none-any.whl.metadata (6.2 kB)
+Collecting python-dateutil>=2.8.2 (from pandas<3.0,>=1.0->gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.tx
+t (line 4))
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas<3.0,>=1.0->gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4)
+)
+  Using cached pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas<3.0,>=1.0->gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line
+4))
+  Using cached tzdata-2025.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting annotated-types>=0.6.0 (from pydantic>=2.0->gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (
+line 4))
+  Using cached annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.33.2 (from pydantic>=2.0->gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (l
+ine 4))
+  Using cached pydantic_core-2.33.2-cp310-cp310-win_amd64.whl.metadata (6.9 kB)
+Collecting typing-inspection>=0.4.0 (from pydantic>=2.0->gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt
+ (line 4))
+  Using cached typing_inspection-0.4.1-py3-none-any.whl.metadata (2.6 kB)
+Collecting click>=8.0.0 (from typer<1.0,>=0.12->gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4)
+)
+  Using cached click-8.2.1-py3-none-any.whl.metadata (2.5 kB)
+Collecting shellingham>=1.3.0 (from typer<1.0,>=0.12->gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (l
+ine 4))
+  Using cached shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting rich>=10.11.0 (from typer<1.0,>=0.12->gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4
+))
+  Using cached rich-14.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting colorama (from click>=8.0.0->typer<1.0,>=0.12->gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.tx
+t (line 4))
+  Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting httpcore==1.* (from httpx>=0.24.1->gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 4))
+  Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting h11>=0.16 (from httpcore==1.*->httpx>=0.24.1->gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requirements.txt
+ (line 4))
+  Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas<3.0,>=1.0->gradio==5.23.0->-r D:\FramePack_Redo\FramePack\requi
+rements.txt (line 4))
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=10.11.0->typer<1.0,>=0.12->gradio==5.23.0->-r D:\FramePack_Redo\FramePack\r
+equirements.txt (line 4))
+  Using cached markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=10.11.0->typer<1.0,>=0.12->gradio==5.23.0->-r D:\FramePack_Redo\FramePack
+\requirements.txt (line 4))
+  Using cached pygments-2.19.1-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.11.0->typer<1.0,>=0.12->gradio==5.23.0->-r D:\FramePack_Redo
+\FramePack\requirements.txt (line 4))
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting sympy>=1.13.3 (from torch>=2.0.0->accelerate==1.6.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 1)
+)
+  Using cached sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting networkx (from torch>=2.0.0->accelerate==1.6.0->-r D:\FramePack_Redo\FramePack\requirements.txt (line 1))
+  Using cached networkx-3.4.2-py3-none-any.whl.metadata (6.3 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch>=2.0.0->accelerate==1.6.0->-r D:\FramePack_Redo\FramePack\requi
+rements.txt (line 1))
+  Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting zipp>=3.20 (from importlib-metadata->diffusers==0.33.1->-r D:\FramePack_Redo\FramePack\requirements.txt (line
+ 2))
+  Downloading zipp-3.23.0-py3-none-any.whl.metadata (3.6 kB)
+Using cached accelerate-1.6.0-py3-none-any.whl (354 kB)
+Using cached numpy-1.26.2-cp310-cp310-win_amd64.whl (15.8 MB)
+Using cached diffusers-0.33.1-py3-none-any.whl (3.6 MB)
+Using cached transformers-4.46.2-py3-none-any.whl (10.0 MB)
+Using cached gradio-5.23.0-py3-none-any.whl (51.3 MB)
+Using cached pillow-11.1.0-cp310-cp310-win_amd64.whl (2.6 MB)
+Using cached sentencepiece-0.2.0-cp310-cp310-win_amd64.whl (991 kB)
+Using cached av-12.1.0-cp310-cp310-win_amd64.whl (26.8 MB)
+Using cached scipy-1.12.0-cp310-cp310-win_amd64.whl (46.2 MB)
+Using cached requests-2.31.0-py3-none-any.whl (62 kB)
+Using cached torchsde-0.2.6-py3-none-any.whl (61 kB)
+Using cached gradio_client-1.8.0-py3-none-any.whl (322 kB)
+Using cached aiofiles-23.2.1-py3-none-any.whl (15 kB)
+Using cached anyio-4.9.0-py3-none-any.whl (100 kB)
+Using cached charset_normalizer-3.4.2-cp310-cp310-win_amd64.whl (105 kB)
+Using cached fastapi-0.115.13-py3-none-any.whl (95 kB)
+Using cached groovy-0.1.2-py3-none-any.whl (14 kB)
+Using cached huggingface_hub-0.33.0-py3-none-any.whl (514 kB)
+Using cached idna-3.10-py3-none-any.whl (70 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached MarkupSafe-3.0.2-cp310-cp310-win_amd64.whl (15 kB)
+Using cached orjson-3.10.18-cp310-cp310-win_amd64.whl (134 kB)
+Using cached pandas-2.3.0-cp310-cp310-win_amd64.whl (11.1 MB)
+Using cached pydantic-2.11.7-py3-none-any.whl (444 kB)
+Using cached pydantic_core-2.33.2-cp310-cp310-win_amd64.whl (2.0 MB)
+Using cached PyYAML-6.0.2-cp310-cp310-win_amd64.whl (161 kB)
+Using cached safehttpx-0.1.6-py3-none-any.whl (8.7 kB)
+Using cached semantic_version-2.10.0-py2.py3-none-any.whl (15 kB)
+Using cached starlette-0.46.2-py3-none-any.whl (72 kB)
+Using cached tokenizers-0.20.3-cp310-none-win_amd64.whl (2.4 MB)
+Downloading tomlkit-0.13.3-py3-none-any.whl (38 kB)
+Downloading typer-0.16.0-py3-none-any.whl (46 kB)
+Using cached typing_extensions-4.14.0-py3-none-any.whl (43 kB)
+Using cached urllib3-2.4.0-py3-none-any.whl (128 kB)
+Using cached websockets-15.0.1-cp310-cp310-win_amd64.whl (176 kB)
+Using cached einops-0.8.1-py3-none-any.whl (64 kB)
+Using cached opencv_contrib_python-4.11.0.86-cp37-abi3-win_amd64.whl (46.2 MB)
+Using cached safetensors-0.5.3-cp38-abi3-win_amd64.whl (308 kB)
+Using cached annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Using cached certifi-2025.6.15-py3-none-any.whl (157 kB)
+Using cached click-8.2.1-py3-none-any.whl (102 kB)
+Using cached exceptiongroup-1.3.0-py3-none-any.whl (16 kB)
+Using cached fsspec-2025.5.1-py3-none-any.whl (199 kB)
+Using cached httpx-0.28.1-py3-none-any.whl (73 kB)
+Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+Using cached packaging-25.0-py3-none-any.whl (66 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached python_multipart-0.0.20-py3-none-any.whl (24 kB)
+Using cached pytz-2025.2-py2.py3-none-any.whl (509 kB)
+Using cached regex-2024.11.6-cp310-cp310-win_amd64.whl (274 kB)
+Using cached rich-14.0.0-py3-none-any.whl (243 kB)
+Using cached pygments-2.19.1-py3-none-any.whl (1.2 MB)
+Using cached markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Downloading ruff-0.12.0-py3-none-win_amd64.whl (11.6 MB)
+   ---------------------------------------- 11.6/11.6 MB 45.3 MB/s eta 0:00:00
+Using cached shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached sniffio-1.3.1-py3-none-any.whl (10 kB)
+Using cached torch-2.7.1-cp310-cp310-win_amd64.whl (216.1 MB)
+Using cached sympy-1.14.0-py3-none-any.whl (6.3 MB)
+Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+Using cached tqdm-4.67.1-py3-none-any.whl (78 kB)
+Using cached trampoline-0.1.2-py3-none-any.whl (5.2 kB)
+Using cached typing_inspection-0.4.1-py3-none-any.whl (14 kB)
+Using cached tzdata-2025.2-py2.py3-none-any.whl (347 kB)
+Using cached uvicorn-0.34.3-py3-none-any.whl (62 kB)
+Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Using cached ffmpy-0.6.0-py3-none-any.whl (5.5 kB)
+Using cached filelock-3.18.0-py3-none-any.whl (16 kB)
+Using cached importlib_metadata-8.7.0-py3-none-any.whl (27 kB)
+Downloading zipp-3.23.0-py3-none-any.whl (10 kB)
+Using cached networkx-3.4.2-py3-none-any.whl (1.7 MB)
+Using cached psutil-7.0.0-cp37-abi3-win_amd64.whl (244 kB)
+Using cached pydub-0.25.1-py2.py3-none-any.whl (32 kB)
+Installing collected packages: trampoline, sentencepiece, pytz, pydub, mpmath, zipp, websockets, urllib3, tzdata, typing
+-extensions, tomlkit, sympy, sniffio, six, shellingham, semantic-version, safetensors, ruff, regex, pyyaml, python-multi
+part, pygments, psutil, pillow, packaging, orjson, numpy, networkx, mdurl, markupsafe, idna, h11, groovy, fsspec, filelo
+ck, ffmpy, einops, colorama, charset-normalizer, certifi, av, annotated-types, aiofiles, typing-inspection, tqdm, scipy,
+ requests, python-dateutil, pydantic-core, opencv-contrib-python, markdown-it-py, jinja2, importlib-metadata, httpcore,
+exceptiongroup, click, uvicorn, torch, rich, pydantic, pandas, huggingface-hub, anyio, typer, torchsde, tokenizers, star
+lette, httpx, diffusers, accelerate, transformers, safehttpx, gradio-client, fastapi, gradio
+Successfully installed accelerate-1.6.0 aiofiles-23.2.1 annotated-types-0.7.0 anyio-4.9.0 av-12.1.0 certifi-2025.6.15 ch
+arset-normalizer-3.4.2 click-8.2.1 colorama-0.4.6 diffusers-0.33.1 einops-0.8.1 exceptiongroup-1.3.0 fastapi-0.115.13 ff
+mpy-0.6.0 filelock-3.18.0 fsspec-2025.5.1 gradio-5.23.0 gradio-client-1.8.0 groovy-0.1.2 h11-0.16.0 httpcore-1.0.9 httpx
+-0.28.1 huggingface-hub-0.33.0 idna-3.10 importlib-metadata-8.7.0 jinja2-3.1.6 markdown-it-py-3.0.0 markupsafe-3.0.2 mdu
+rl-0.1.2 mpmath-1.3.0 networkx-3.4.2 numpy-1.26.2 opencv-contrib-python-4.11.0.86 orjson-3.10.18 packaging-25.0 pandas-2
+.3.0 pillow-11.1.0 psutil-7.0.0 pydantic-2.11.7 pydantic-core-2.33.2 pydub-0.25.1 pygments-2.19.1 python-dateutil-2.9.0.
+post0 python-multipart-0.0.20 pytz-2025.2 pyyaml-6.0.2 regex-2024.11.6 requests-2.31.0 rich-14.0.0 ruff-0.12.0 safehttpx
+-0.1.6 safetensors-0.5.3 scipy-1.12.0 semantic-version-2.10.0 sentencepiece-0.2.0 shellingham-1.5.4 six-1.17.0 sniffio-1
+.3.1 starlette-0.46.2 sympy-1.14.0 tokenizers-0.20.3 tomlkit-0.13.3 torch-2.7.1 torchsde-0.2.6 tqdm-4.67.1 trampoline-0.
+1.2 transformers-4.46.2 typer-0.16.0 typing-extensions-4.14.0 typing-inspection-0.4.1 tzdata-2025.2 urllib3-2.4.0 uvicor
+n-0.34.3 websockets-15.0.1 zipp-3.23.0
+Dependencies installed in venv.
+[GitHub Installer] Complete.
+Press Enter to return to menu...
+===========================================
+      PANDORA'S APP - SYSTEM ORACLE
+===========================================
+[1]  Curiosity - System Scan
+[2]  Sickness - Temp Cleaner
+[3]  Deceit - Privacy Scan
+[4]  Control - Startup Manager
+[5]  GitHub Installer
+[6]  Model + Tool Portals
+[7]  Dev Environment Report
+[8]  System Backup
+[9]  Driver Updater
+[10] View Logs
+[11] Exit with Hope
+===========================================
+[Pandora] Running InstallFromGit...
+[GitHub Installer] Started...
+Select a repository to install or enter your own:
+  [1] AUTOMATIC1111/stable-diffusion-webui
+  [2] comfyanonymous/ComfyUI
+  [3] lllyasviel/stable-diffusion-webui-forge
+  [4] lllyasviel/FramePack
+  [5] Enter a custom GitHub URL
+Cloning https://github.com/AUTOMATIC1111/stable-diffusion-webui.git to D:\Automatic1111\stable-diffusion-webui...
+Cloning into 'D:\Automatic1111\stable-diffusion-webui'...
+remote: Enumerating objects: 34968, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 34968 (delta 6), reused 3 (delta 3), pack-reused 34954 (from 2)
+Receiving objects: 100% (34968/34968), 35.56 MiB | 58.63 MiB/s, done.
+
+Resolving deltas: 100% (24405/24405), done.
+Clone successful!
+requirements.txt found. Using venv + pip install.
+
+Requirement already satisfied: pip in d:\automatic1111\stable-diffusion-webui\venv\lib\site-packages (22.2.1)
+Collecting pip
+  Using cached pip-25.1.1-py3-none-any.whl (1.8 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 22.2.1
+    Uninstalling pip-22.2.1:
+      Successfully uninstalled pip-22.2.1
+Successfully installed pip-25.1.1
+Collecting GitPython (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 1))
+  Using cached GitPython-3.1.44-py3-none-any.whl.metadata (13 kB)
+Collecting Pillow (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 2))
+  Using cached pillow-11.2.1-cp310-cp310-win_amd64.whl.metadata (9.1 kB)
+Collecting accelerate (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 3))
+  Using cached accelerate-1.7.0-py3-none-any.whl.metadata (19 kB)
+Collecting blendmodes (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 5))
+  Using cached blendmodes-2025-py3-none-any.whl.metadata (9.0 kB)
+Collecting clean-fid (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 6))
+  Using cached clean_fid-0.1.35-py3-none-any.whl.metadata (36 kB)
+Collecting diskcache (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 7))
+  Using cached diskcache-5.6.3-py3-none-any.whl.metadata (20 kB)
+Collecting einops (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 8))
+  Using cached einops-0.8.1-py3-none-any.whl.metadata (13 kB)
+Collecting facexlib (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 9))
+  Using cached facexlib-0.3.0-py3-none-any.whl.metadata (4.6 kB)
+Collecting fastapi>=0.90.1 (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 10))
+  Using cached fastapi-0.115.13-py3-none-any.whl.metadata (27 kB)
+Collecting gradio==3.41.2 (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 11))
+  Using cached gradio-3.41.2-py3-none-any.whl.metadata (17 kB)
+Collecting inflection (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 12))
+  Using cached inflection-0.5.1-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting jsonmerge (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 13))
+  Using cached jsonmerge-1.9.2-py3-none-any.whl.metadata (21 kB)
+Collecting kornia (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 14))
+  Using cached kornia-0.8.1-py2.py3-none-any.whl.metadata (17 kB)
+Collecting lark (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 15))
+  Using cached lark-1.2.2-py3-none-any.whl.metadata (1.8 kB)
+Collecting numpy (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 16))
+  Using cached numpy-2.2.6-cp310-cp310-win_amd64.whl.metadata (60 kB)
+Collecting omegaconf (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 17))
+  Using cached omegaconf-2.3.0-py3-none-any.whl.metadata (3.9 kB)
+Collecting open-clip-torch (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 18))
+  Using cached open_clip_torch-2.32.0-py3-none-any.whl.metadata (31 kB)
+Collecting piexif (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 20))
+  Using cached piexif-1.1.3-py2.py3-none-any.whl.metadata (3.7 kB)
+Collecting protobuf==3.20.0 (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 21))
+  Using cached protobuf-3.20.0-cp310-cp310-win_amd64.whl.metadata (698 bytes)
+Collecting psutil (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 22))
+  Using cached psutil-7.0.0-cp37-abi3-win_amd64.whl.metadata (23 kB)
+Collecting pytorch_lightning (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 23))
+  Using cached pytorch_lightning-2.5.1.post0-py3-none-any.whl.metadata (20 kB)
+Collecting requests (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 24))
+  Using cached requests-2.32.4-py3-none-any.whl.metadata (4.9 kB)
+Collecting resize-right (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 25))
+  Using cached resize_right-0.0.2-py3-none-any.whl.metadata (551 bytes)
+Collecting safetensors (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 27))
+  Using cached safetensors-0.5.3-cp38-abi3-win_amd64.whl.metadata (3.9 kB)
+Collecting scikit-image>=0.19 (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 28))
+  Using cached scikit_image-0.25.2-cp310-cp310-win_amd64.whl.metadata (14 kB)
+Collecting tomesd (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 29))
+  Using cached tomesd-0.1.3-py3-none-any.whl.metadata (9.1 kB)
+Collecting torch (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 30))
+  Using cached torch-2.7.1-cp310-cp310-win_amd64.whl.metadata (28 kB)
+Collecting torchdiffeq (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 31))
+  Using cached torchdiffeq-0.2.5-py3-none-any.whl.metadata (440 bytes)
+Collecting torchsde (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 32))
+  Using cached torchsde-0.2.6-py3-none-any.whl.metadata (5.3 kB)
+Collecting transformers==4.30.2 (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 33))
+  Using cached transformers-4.30.2-py3-none-any.whl.metadata (113 kB)
+Collecting pillow-avif-plugin==1.4.3 (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 34))
+  Using cached pillow_avif_plugin-1.4.3-cp310-cp310-win_amd64.whl.metadata (1.7 kB)
+Collecting aiofiles<24.0,>=22.0 (from gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line
+11))
+  Using cached aiofiles-23.2.1-py3-none-any.whl.metadata (9.7 kB)
+Collecting altair<6.0,>=4.2.0 (from gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 11
+))
+  Using cached altair-5.5.0-py3-none-any.whl.metadata (11 kB)
+Collecting ffmpy (from gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 11))
+  Using cached ffmpy-0.6.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting gradio-client==0.5.0 (from gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line
+11))
+  Using cached gradio_client-0.5.0-py3-none-any.whl.metadata (7.1 kB)
+Collecting httpx (from gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 11))
+  Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting huggingface-hub>=0.14.0 (from gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (li
+ne 11))
+  Using cached huggingface_hub-0.33.0-py3-none-any.whl.metadata (14 kB)
+Collecting importlib-resources<7.0,>=1.3 (from gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.t
+xt (line 11))
+  Using cached importlib_resources-6.5.2-py3-none-any.whl.metadata (3.9 kB)
+Collecting jinja2<4.0 (from gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 11))
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting markupsafe~=2.0 (from gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 11))
+  Using cached MarkupSafe-2.1.5-cp310-cp310-win_amd64.whl.metadata (3.1 kB)
+Collecting matplotlib~=3.0 (from gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 11))
+  Using cached matplotlib-3.10.3-cp310-cp310-win_amd64.whl.metadata (11 kB)
+Collecting numpy (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 16))
+  Using cached numpy-1.26.4-cp310-cp310-win_amd64.whl.metadata (61 kB)
+Collecting orjson~=3.0 (from gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 11))
+  Using cached orjson-3.10.18-cp310-cp310-win_amd64.whl.metadata (43 kB)
+Collecting packaging (from gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 11))
+  Using cached packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pandas<3.0,>=1.0 (from gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 11))
+
+  Using cached pandas-2.3.0-cp310-cp310-win_amd64.whl.metadata (19 kB)
+Collecting Pillow (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 2))
+  Using cached pillow-10.4.0-cp310-cp310-win_amd64.whl.metadata (9.3 kB)
+Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,<3.0.0,>=1.7.4 (from gradio==3.41.2->-r D:\Automatic1111\stable-diffusi
+on-webui\requirements.txt (line 11))
+  Using cached pydantic-2.11.7-py3-none-any.whl.metadata (67 kB)
+Collecting pydub (from gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 11))
+  Using cached pydub-0.25.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting python-multipart (from gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 11))
+
+  Using cached python_multipart-0.0.20-py3-none-any.whl.metadata (1.8 kB)
+Collecting pyyaml<7.0,>=5.0 (from gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 11))
+
+  Using cached PyYAML-6.0.2-cp310-cp310-win_amd64.whl.metadata (2.1 kB)
+Collecting semantic-version~=2.0 (from gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line
+ 11))
+  Using cached semantic_version-2.10.0-py2.py3-none-any.whl.metadata (9.7 kB)
+Collecting typing-extensions~=4.0 (from gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (lin
+e 11))
+  Using cached typing_extensions-4.14.0-py3-none-any.whl.metadata (3.0 kB)
+Collecting uvicorn>=0.14.0 (from gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 11))
+  Using cached uvicorn-0.34.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting websockets<12.0,>=10.0 (from gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (lin
+e 11))
+  Using cached websockets-11.0.3-cp310-cp310-win_amd64.whl.metadata (6.8 kB)
+Collecting filelock (from transformers==4.30.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 33))
+  Using cached filelock-3.18.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting regex!=2019.12.17 (from transformers==4.30.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (li
+ne 33))
+  Using cached regex-2024.11.6-cp310-cp310-win_amd64.whl.metadata (41 kB)
+Collecting tokenizers!=0.11.3,<0.14,>=0.11.1 (from transformers==4.30.2->-r D:\Automatic1111\stable-diffusion-webui\requ
+irements.txt (line 33))
+  Using cached tokenizers-0.13.3-cp310-cp310-win_amd64.whl.metadata (6.9 kB)
+Collecting tqdm>=4.27 (from transformers==4.30.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 33))
+
+  Using cached tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+Collecting fsspec (from gradio-client==0.5.0->gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.tx
+t (line 11))
+  Using cached fsspec-2025.5.1-py3-none-any.whl.metadata (11 kB)
+Collecting charset_normalizer<4,>=2 (from requests->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 24
+))
+  Using cached charset_normalizer-3.4.2-cp310-cp310-win_amd64.whl.metadata (36 kB)
+Collecting idna<4,>=2.5 (from requests->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 24))
+  Using cached idna-3.10-py3-none-any.whl.metadata (10 kB)
+Collecting urllib3<3,>=1.21.1 (from requests->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 24))
+  Using cached urllib3-2.4.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting certifi>=2017.4.17 (from requests->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 24))
+  Using cached certifi-2025.6.15-py3-none-any.whl.metadata (2.4 kB)
+Collecting jsonschema>=3.0 (from altair<6.0,>=4.2.0->gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirem
+ents.txt (line 11))
+  Using cached jsonschema-4.24.0-py3-none-any.whl.metadata (7.8 kB)
+Collecting narwhals>=1.14.2 (from altair<6.0,>=4.2.0->gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\require
+ments.txt (line 11))
+  Using cached narwhals-1.43.0-py3-none-any.whl.metadata (11 kB)
+Collecting contourpy>=1.0.1 (from matplotlib~=3.0->gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requiremen
+ts.txt (line 11))
+  Using cached contourpy-1.3.2-cp310-cp310-win_amd64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib~=3.0->gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.t
+xt (line 11))
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib~=3.0->gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requireme
+nts.txt (line 11))
+  Using cached fonttools-4.58.4-cp310-cp310-win_amd64.whl.metadata (108 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib~=3.0->gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requireme
+nts.txt (line 11))
+  Using cached kiwisolver-1.4.8-cp310-cp310-win_amd64.whl.metadata (6.3 kB)
+Collecting pyparsing>=2.3.1 (from matplotlib~=3.0->gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requiremen
+ts.txt (line 11))
+  Using cached pyparsing-3.2.3-py3-none-any.whl.metadata (5.0 kB)
+Collecting python-dateutil>=2.7 (from matplotlib~=3.0->gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requir
+ements.txt (line 11))
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas<3.0,>=1.0->gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.
+txt (line 11))
+  Using cached pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas<3.0,>=1.0->gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirement
+s.txt (line 11))
+  Using cached tzdata-2025.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting annotated-types>=0.6.0 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,<3.0.0,>=1.7.4->gradio==3.41.2->-r D:\Auto
+matic1111\stable-diffusion-webui\requirements.txt (line 11))
+  Using cached annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.33.2 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,<3.0.0,>=1.7.4->gradio==3.41.2->-r D:\Autom
+atic1111\stable-diffusion-webui\requirements.txt (line 11))
+  Using cached pydantic_core-2.33.2-cp310-cp310-win_amd64.whl.metadata (6.9 kB)
+Collecting typing-inspection>=0.4.0 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,<3.0.0,>=1.7.4->gradio==3.41.2->-r D:\Au
+tomatic1111\stable-diffusion-webui\requirements.txt (line 11))
+  Using cached typing_inspection-0.4.1-py3-none-any.whl.metadata (2.6 kB)
+Collecting gitdb<5,>=4.0.1 (from GitPython->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 1))
+  Using cached gitdb-4.0.12-py3-none-any.whl.metadata (1.2 kB)
+Collecting smmap<6,>=3.0.1 (from gitdb<5,>=4.0.1->GitPython->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt
+ (line 1))
+  Using cached smmap-5.0.2-py3-none-any.whl.metadata (4.3 kB)
+Collecting aenum>=3.1.15 (from blendmodes->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 5))
+  Using cached aenum-3.1.16-py3-none-any.whl.metadata (3.8 kB)
+INFO: pip is looking at multiple versions of blendmodes to determine which version is compatible with other requirements
+. This could take a while.
+Collecting blendmodes (from -r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 5))
+  Using cached blendmodes-2024.1.1-py3-none-any.whl.metadata (9.3 kB)
+Collecting torchvision (from clean-fid->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 6))
+  Using cached torchvision-0.22.1-cp310-cp310-win_amd64.whl.metadata (6.1 kB)
+Collecting scipy>=1.0.1 (from clean-fid->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 6))
+  Using cached scipy-1.15.3-cp310-cp310-win_amd64.whl.metadata (60 kB)
+Collecting filterpy (from facexlib->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 9))
+  Using cached filterpy-1.4.5-py3-none-any.whl
+Collecting numba (from facexlib->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 9))
+  Using cached numba-0.61.2-cp310-cp310-win_amd64.whl.metadata (2.9 kB)
+Collecting opencv-python (from facexlib->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 9))
+  Using cached opencv_python-4.11.0.86-cp37-abi3-win_amd64.whl.metadata (20 kB)
+Collecting starlette<0.47.0,>=0.40.0 (from fastapi>=0.90.1->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt
+(line 10))
+  Using cached starlette-0.46.2-py3-none-any.whl.metadata (6.2 kB)
+Collecting anyio<5,>=3.6.2 (from starlette<0.47.0,>=0.40.0->fastapi>=0.90.1->-r D:\Automatic1111\stable-diffusion-webui\
+requirements.txt (line 10))
+  Using cached anyio-4.9.0-py3-none-any.whl.metadata (4.7 kB)
+Collecting exceptiongroup>=1.0.2 (from anyio<5,>=3.6.2->starlette<0.47.0,>=0.40.0->fastapi>=0.90.1->-r D:\Automatic1111\
+stable-diffusion-webui\requirements.txt (line 10))
+  Using cached exceptiongroup-1.3.0-py3-none-any.whl.metadata (6.7 kB)
+Collecting sniffio>=1.1 (from anyio<5,>=3.6.2->starlette<0.47.0,>=0.40.0->fastapi>=0.90.1->-r D:\Automatic1111\stable-di
+ffusion-webui\requirements.txt (line 10))
+  Using cached sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting kornia_rs>=0.1.9 (from kornia->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 14))
+  Using cached kornia_rs-0.1.9-cp310-cp310-win_amd64.whl.metadata (12 kB)
+Collecting antlr4-python3-runtime==4.9.* (from omegaconf->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (l
+ine 17))
+  Using cached antlr4_python3_runtime-4.9.3-py3-none-any.whl
+Collecting ftfy (from open-clip-torch->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 18))
+  Using cached ftfy-6.3.1-py3-none-any.whl.metadata (7.3 kB)
+Collecting timm (from open-clip-torch->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 18))
+  Using cached timm-1.0.15-py3-none-any.whl.metadata (52 kB)
+Collecting torchmetrics>=0.7.0 (from pytorch_lightning->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (lin
+e 23))
+  Using cached torchmetrics-1.7.3-py3-none-any.whl.metadata (21 kB)
+Collecting lightning-utilities>=0.10.0 (from pytorch_lightning->-r D:\Automatic1111\stable-diffusion-webui\requirements.
+txt (line 23))
+  Using cached lightning_utilities-0.14.3-py3-none-any.whl.metadata (5.6 kB)
+Collecting networkx>=3.0 (from scikit-image>=0.19->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 28)
+)
+  Using cached networkx-3.4.2-py3-none-any.whl.metadata (6.3 kB)
+Collecting imageio!=2.35.0,>=2.33 (from scikit-image>=0.19->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt
+(line 28))
+  Using cached imageio-2.37.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting tifffile>=2022.8.12 (from scikit-image>=0.19->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (li
+ne 28))
+  Using cached tifffile-2025.5.10-py3-none-any.whl.metadata (31 kB)
+Collecting lazy-loader>=0.4 (from scikit-image>=0.19->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line
+28))
+  Using cached lazy_loader-0.4-py3-none-any.whl.metadata (7.6 kB)
+Collecting sympy>=1.13.3 (from torch->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 30))
+  Using cached sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting trampoline>=0.1.2 (from torchsde->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 32))
+  Using cached trampoline-0.1.2-py3-none-any.whl.metadata (10 kB)
+Collecting aiohttp!=4.0.0a0,!=4.0.0a1 (from fsspec[http]>=2022.5.0->pytorch_lightning->-r D:\Automatic1111\stable-diffus
+ion-webui\requirements.txt (line 23))
+  Using cached aiohttp-3.12.13-cp310-cp310-win_amd64.whl.metadata (7.9 kB)
+Collecting aiohappyeyeballs>=2.5.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2022.5.0->pytorch_lightning->-r D:\Au
+tomatic1111\stable-diffusion-webui\requirements.txt (line 23))
+  Using cached aiohappyeyeballs-2.6.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting aiosignal>=1.1.2 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2022.5.0->pytorch_lightning->-r D:\Automatic
+1111\stable-diffusion-webui\requirements.txt (line 23))
+  Using cached aiosignal-1.3.2-py2.py3-none-any.whl.metadata (3.8 kB)
+Collecting async-timeout<6.0,>=4.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2022.5.0->pytorch_lightning->-r D:\Au
+tomatic1111\stable-diffusion-webui\requirements.txt (line 23))
+  Using cached async_timeout-5.0.1-py3-none-any.whl.metadata (5.1 kB)
+Collecting attrs>=17.3.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2022.5.0->pytorch_lightning->-r D:\Automatic111
+1\stable-diffusion-webui\requirements.txt (line 23))
+  Using cached attrs-25.3.0-py3-none-any.whl.metadata (10 kB)
+Collecting frozenlist>=1.1.1 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2022.5.0->pytorch_lightning->-r D:\Automati
+c1111\stable-diffusion-webui\requirements.txt (line 23))
+  Using cached frozenlist-1.7.0-cp310-cp310-win_amd64.whl.metadata (19 kB)
+Collecting multidict<7.0,>=4.5 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2022.5.0->pytorch_lightning->-r D:\Automa
+tic1111\stable-diffusion-webui\requirements.txt (line 23))
+  Using cached multidict-6.5.0-cp310-cp310-win_amd64.whl.metadata (5.5 kB)
+Collecting propcache>=0.2.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2022.5.0->pytorch_lightning->-r D:\Automatic
+1111\stable-diffusion-webui\requirements.txt (line 23))
+  Using cached propcache-0.3.2-cp310-cp310-win_amd64.whl.metadata (12 kB)
+Collecting yarl<2.0,>=1.17.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2022.5.0->pytorch_lightning->-r D:\Automati
+c1111\stable-diffusion-webui\requirements.txt (line 23))
+  Using cached yarl-1.20.1-cp310-cp310-win_amd64.whl.metadata (76 kB)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema>=3.0->altair<6.0,>=4.2.0->gradio==3.41.2->-r D:\Automat
+ic1111\stable-diffusion-webui\requirements.txt (line 11))
+  Using cached jsonschema_specifications-2025.4.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting referencing>=0.28.4 (from jsonschema>=3.0->altair<6.0,>=4.2.0->gradio==3.41.2->-r D:\Automatic1111\stable-dif
+fusion-webui\requirements.txt (line 11))
+  Using cached referencing-0.36.2-py3-none-any.whl.metadata (2.8 kB)
+Collecting rpds-py>=0.7.1 (from jsonschema>=3.0->altair<6.0,>=4.2.0->gradio==3.41.2->-r D:\Automatic1111\stable-diffusio
+n-webui\requirements.txt (line 11))
+  Using cached rpds_py-0.25.1-cp310-cp310-win_amd64.whl.metadata (4.2 kB)
+Requirement already satisfied: setuptools in d:\automatic1111\stable-diffusion-webui\venv\lib\site-packages (from lightn
+ing-utilities>=0.10.0->pytorch_lightning->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 23)) (63.2.0
+)
+Collecting six>=1.5 (from python-dateutil>=2.7->matplotlib~=3.0->gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-we
+bui\requirements.txt (line 11))
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (l
+ine 30))
+  Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting colorama (from tqdm>=4.27->transformers==4.30.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt
+(line 33))
+  Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting click>=7.0 (from uvicorn>=0.14.0->gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt
+ (line 11))
+  Using cached click-8.2.1-py3-none-any.whl.metadata (2.5 kB)
+Collecting h11>=0.8 (from uvicorn>=0.14.0->gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (
+line 11))
+  Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting wcwidth (from ftfy->open-clip-torch->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line 18))
+  Using cached wcwidth-0.2.13-py2.py3-none-any.whl.metadata (14 kB)
+Collecting httpcore==1.* (from httpx->gradio==3.41.2->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt (line
+11))
+  Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting llvmlite<0.45,>=0.44.0dev0 (from numba->facexlib->-r D:\Automatic1111\stable-diffusion-webui\requirements.txt
+ (line 9))
+  Using cached llvmlite-0.44.0-cp310-cp310-win_amd64.whl.metadata (5.0 kB)
+Using cached gradio-3.41.2-py3-none-any.whl (20.1 MB)
+Using cached protobuf-3.20.0-cp310-cp310-win_amd64.whl (903 kB)
+Using cached transformers-4.30.2-py3-none-any.whl (7.2 MB)
+Using cached pillow_avif_plugin-1.4.3-cp310-cp310-win_amd64.whl (10.6 MB)
+Using cached gradio_client-0.5.0-py3-none-any.whl (298 kB)
+Using cached pillow-10.4.0-cp310-cp310-win_amd64.whl (2.6 MB)
+Using cached numpy-1.26.4-cp310-cp310-win_amd64.whl (15.8 MB)
+Using cached requests-2.32.4-py3-none-any.whl (64 kB)
+Using cached aiofiles-23.2.1-py3-none-any.whl (15 kB)
+Using cached altair-5.5.0-py3-none-any.whl (731 kB)
+Using cached charset_normalizer-3.4.2-cp310-cp310-win_amd64.whl (105 kB)
+Using cached huggingface_hub-0.33.0-py3-none-any.whl (514 kB)
+Using cached idna-3.10-py3-none-any.whl (70 kB)
+Using cached importlib_resources-6.5.2-py3-none-any.whl (37 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached MarkupSafe-2.1.5-cp310-cp310-win_amd64.whl (17 kB)
+Using cached matplotlib-3.10.3-cp310-cp310-win_amd64.whl (8.1 MB)
+Using cached orjson-3.10.18-cp310-cp310-win_amd64.whl (134 kB)
+Using cached pandas-2.3.0-cp310-cp310-win_amd64.whl (11.1 MB)
+Using cached pydantic-2.11.7-py3-none-any.whl (444 kB)
+Using cached pydantic_core-2.33.2-cp310-cp310-win_amd64.whl (2.0 MB)
+Using cached PyYAML-6.0.2-cp310-cp310-win_amd64.whl (161 kB)
+Using cached semantic_version-2.10.0-py2.py3-none-any.whl (15 kB)
+Using cached tokenizers-0.13.3-cp310-cp310-win_amd64.whl (3.5 MB)
+Using cached typing_extensions-4.14.0-py3-none-any.whl (43 kB)
+Using cached urllib3-2.4.0-py3-none-any.whl (128 kB)
+Using cached websockets-11.0.3-cp310-cp310-win_amd64.whl (124 kB)
+Using cached GitPython-3.1.44-py3-none-any.whl (207 kB)
+Using cached gitdb-4.0.12-py3-none-any.whl (62 kB)
+Using cached smmap-5.0.2-py3-none-any.whl (24 kB)
+Using cached accelerate-1.7.0-py3-none-any.whl (362 kB)
+Using cached blendmodes-2024.1.1-py3-none-any.whl (10 kB)
+Using cached aenum-3.1.16-py3-none-any.whl (165 kB)
+Using cached clean_fid-0.1.35-py3-none-any.whl (26 kB)
+Using cached diskcache-5.6.3-py3-none-any.whl (45 kB)
+Using cached einops-0.8.1-py3-none-any.whl (64 kB)
+Using cached facexlib-0.3.0-py3-none-any.whl (59 kB)
+Using cached fastapi-0.115.13-py3-none-any.whl (95 kB)
+Using cached starlette-0.46.2-py3-none-any.whl (72 kB)
+Using cached anyio-4.9.0-py3-none-any.whl (100 kB)
+Using cached inflection-0.5.1-py2.py3-none-any.whl (9.5 kB)
+Using cached jsonmerge-1.9.2-py3-none-any.whl (19 kB)
+Using cached kornia-0.8.1-py2.py3-none-any.whl (1.1 MB)
+Using cached lark-1.2.2-py3-none-any.whl (111 kB)
+Using cached omegaconf-2.3.0-py3-none-any.whl (79 kB)
+Using cached open_clip_torch-2.32.0-py3-none-any.whl (1.5 MB)
+Using cached piexif-1.1.3-py2.py3-none-any.whl (20 kB)
+Using cached psutil-7.0.0-cp37-abi3-win_amd64.whl (244 kB)
+Using cached pytorch_lightning-2.5.1.post0-py3-none-any.whl (823 kB)
+Using cached resize_right-0.0.2-py3-none-any.whl (8.9 kB)
+Using cached safetensors-0.5.3-cp38-abi3-win_amd64.whl (308 kB)
+Using cached scikit_image-0.25.2-cp310-cp310-win_amd64.whl (12.8 MB)
+Using cached tomesd-0.1.3-py3-none-any.whl (11 kB)
+Using cached torch-2.7.1-cp310-cp310-win_amd64.whl (216.1 MB)
+Using cached torchdiffeq-0.2.5-py3-none-any.whl (32 kB)
+Using cached torchsde-0.2.6-py3-none-any.whl (61 kB)
+Using cached annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Using cached certifi-2025.6.15-py3-none-any.whl (157 kB)
+Using cached contourpy-1.3.2-cp310-cp310-win_amd64.whl (221 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Using cached exceptiongroup-1.3.0-py3-none-any.whl (16 kB)
+Using cached fonttools-4.58.4-cp310-cp310-win_amd64.whl (2.2 MB)
+Using cached fsspec-2025.5.1-py3-none-any.whl (199 kB)
+Using cached aiohttp-3.12.13-cp310-cp310-win_amd64.whl (450 kB)
+Using cached async_timeout-5.0.1-py3-none-any.whl (6.2 kB)
+Using cached multidict-6.5.0-cp310-cp310-win_amd64.whl (44 kB)
+Using cached yarl-1.20.1-cp310-cp310-win_amd64.whl (86 kB)
+Using cached aiohappyeyeballs-2.6.1-py3-none-any.whl (15 kB)
+Using cached aiosignal-1.3.2-py2.py3-none-any.whl (7.6 kB)
+Using cached attrs-25.3.0-py3-none-any.whl (63 kB)
+Using cached frozenlist-1.7.0-cp310-cp310-win_amd64.whl (43 kB)
+Using cached imageio-2.37.0-py3-none-any.whl (315 kB)
+Using cached jsonschema-4.24.0-py3-none-any.whl (88 kB)
+Using cached jsonschema_specifications-2025.4.1-py3-none-any.whl (18 kB)
+Using cached kiwisolver-1.4.8-cp310-cp310-win_amd64.whl (71 kB)
+Using cached kornia_rs-0.1.9-cp310-cp310-win_amd64.whl (2.3 MB)
+Using cached lazy_loader-0.4-py3-none-any.whl (12 kB)
+Using cached lightning_utilities-0.14.3-py3-none-any.whl (28 kB)
+Using cached narwhals-1.43.0-py3-none-any.whl (362 kB)
+Using cached networkx-3.4.2-py3-none-any.whl (1.7 MB)
+Using cached packaging-25.0-py3-none-any.whl (66 kB)
+Using cached propcache-0.3.2-cp310-cp310-win_amd64.whl (41 kB)
+Using cached pyparsing-3.2.3-py3-none-any.whl (111 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached pytz-2025.2-py2.py3-none-any.whl (509 kB)
+Using cached referencing-0.36.2-py3-none-any.whl (26 kB)
+Using cached regex-2024.11.6-cp310-cp310-win_amd64.whl (274 kB)
+Using cached rpds_py-0.25.1-cp310-cp310-win_amd64.whl (231 kB)
+Using cached scipy-1.15.3-cp310-cp310-win_amd64.whl (41.3 MB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached sniffio-1.3.1-py3-none-any.whl (10 kB)
+Using cached sympy-1.14.0-py3-none-any.whl (6.3 MB)
+Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+Using cached tifffile-2025.5.10-py3-none-any.whl (226 kB)
+Using cached torchmetrics-1.7.3-py3-none-any.whl (962 kB)
+Using cached tqdm-4.67.1-py3-none-any.whl (78 kB)
+Using cached trampoline-0.1.2-py3-none-any.whl (5.2 kB)
+Using cached typing_inspection-0.4.1-py3-none-any.whl (14 kB)
+Using cached tzdata-2025.2-py2.py3-none-any.whl (347 kB)
+Using cached uvicorn-0.34.3-py3-none-any.whl (62 kB)
+Using cached click-8.2.1-py3-none-any.whl (102 kB)
+Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Using cached ffmpy-0.6.0-py3-none-any.whl (5.5 kB)
+Using cached filelock-3.18.0-py3-none-any.whl (16 kB)
+Using cached ftfy-6.3.1-py3-none-any.whl (44 kB)
+Using cached httpx-0.28.1-py3-none-any.whl (73 kB)
+Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+Using cached numba-0.61.2-cp310-cp310-win_amd64.whl (2.8 MB)
+Using cached llvmlite-0.44.0-cp310-cp310-win_amd64.whl (30.3 MB)
+Using cached opencv_python-4.11.0.86-cp37-abi3-win_amd64.whl (39.5 MB)
+Using cached pydub-0.25.1-py2.py3-none-any.whl (32 kB)
+Using cached python_multipart-0.0.20-py3-none-any.whl (24 kB)
+Using cached timm-1.0.15-py3-none-any.whl (2.4 MB)
+Using cached torchvision-0.22.1-cp310-cp310-win_amd64.whl (1.7 MB)
+Using cached wcwidth-0.2.13-py2.py3-none-any.whl (34 kB)
+Installing collected packages: wcwidth, trampoline, tokenizers, resize-right, pytz, pydub, pillow-avif-plugin, mpmath, a
+ntlr4-python3-runtime, aenum, websockets, urllib3, tzdata, typing-extensions, sympy, sniffio, smmap, six, semantic-versi
+on, safetensors, rpds-py, regex, pyyaml, python-multipart, pyparsing, psutil, protobuf, propcache, Pillow, piexif, packa
+ging, orjson, numpy, networkx, narwhals, markupsafe, llvmlite, lark, kornia_rs, kiwisolver, inflection, importlib-resour
+ces, idna, h11, ftfy, fsspec, frozenlist, fonttools, filelock, ffmpy, einops, diskcache, cycler, colorama, charset_norma
+lizer, certifi, attrs, async-timeout, annotated-types, aiohappyeyeballs, aiofiles, typing-inspection, tqdm, tifffile, sc
+ipy, requests, referencing, python-dateutil, pydantic-core, opencv-python, omegaconf, numba, multidict, lightning-utilit
+ies, lazy-loader, jinja2, imageio, httpcore, gitdb, exceptiongroup, contourpy, click, blendmodes, aiosignal, yarl, uvico
+rn, torch, scikit-image, pydantic, pandas, matplotlib, jsonschema-specifications, huggingface-hub, GitPython, anyio, tra
+nsformers, torchvision, torchsde, torchmetrics, torchdiffeq, tomesd, starlette, kornia, jsonschema, httpx, filterpy, aio
+http, accelerate, timm, jsonmerge, gradio-client, fastapi, facexlib, clean-fid, altair, pytorch_lightning, open-clip-tor
+ch, gradio
+Successfully installed GitPython-3.1.44 Pillow-10.4.0 accelerate-1.7.0 aenum-3.1.16 aiofiles-23.2.1 aiohappyeyeballs-2.6
+.1 aiohttp-3.12.13 aiosignal-1.3.2 altair-5.5.0 annotated-types-0.7.0 antlr4-python3-runtime-4.9.3 anyio-4.9.0 async-tim
+eout-5.0.1 attrs-25.3.0 blendmodes-2024.1.1 certifi-2025.6.15 charset_normalizer-3.4.2 clean-fid-0.1.35 click-8.2.1 colo
+rama-0.4.6 contourpy-1.3.2 cycler-0.12.1 diskcache-5.6.3 einops-0.8.1 exceptiongroup-1.3.0 facexlib-0.3.0 fastapi-0.115.
+13 ffmpy-0.6.0 filelock-3.18.0 filterpy-1.4.5 fonttools-4.58.4 frozenlist-1.7.0 fsspec-2025.5.1 ftfy-6.3.1 gitdb-4.0.12
+gradio-3.41.2 gradio-client-0.5.0 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 huggingface-hub-0.33.0 idna-3.10 imageio-2.37.0
+ importlib-resources-6.5.2 inflection-0.5.1 jinja2-3.1.6 jsonmerge-1.9.2 jsonschema-4.24.0 jsonschema-specifications-202
+5.4.1 kiwisolver-1.4.8 kornia-0.8.1 kornia_rs-0.1.9 lark-1.2.2 lazy-loader-0.4 lightning-utilities-0.14.3 llvmlite-0.44.
+0 markupsafe-2.1.5 matplotlib-3.10.3 mpmath-1.3.0 multidict-6.5.0 narwhals-1.43.0 networkx-3.4.2 numba-0.61.2 numpy-1.26
+.4 omegaconf-2.3.0 open-clip-torch-2.32.0 opencv-python-4.11.0.86 orjson-3.10.18 packaging-25.0 pandas-2.3.0 piexif-1.1.
+3 pillow-avif-plugin-1.4.3 propcache-0.3.2 protobuf-3.20.0 psutil-7.0.0 pydantic-2.11.7 pydantic-core-2.33.2 pydub-0.25.
+1 pyparsing-3.2.3 python-dateutil-2.9.0.post0 python-multipart-0.0.20 pytorch_lightning-2.5.1.post0 pytz-2025.2 pyyaml-6
+.0.2 referencing-0.36.2 regex-2024.11.6 requests-2.32.4 resize-right-0.0.2 rpds-py-0.25.1 safetensors-0.5.3 scikit-image
+-0.25.2 scipy-1.15.3 semantic-version-2.10.0 six-1.17.0 smmap-5.0.2 sniffio-1.3.1 starlette-0.46.2 sympy-1.14.0 tifffile
+-2025.5.10 timm-1.0.15 tokenizers-0.13.3 tomesd-0.1.3 torch-2.7.1 torchdiffeq-0.2.5 torchmetrics-1.7.3 torchsde-0.2.6 to
+rchvision-0.22.1 tqdm-4.67.1 trampoline-0.1.2 transformers-4.30.2 typing-extensions-4.14.0 typing-inspection-0.4.1 tzdat
+a-2025.2 urllib3-2.4.0 uvicorn-0.34.3 wcwidth-0.2.13 websockets-11.0.3 yarl-1.20.1
+Dependencies installed in venv.
+[GitHub Installer] Complete.
+Press Enter to return to menu...
